@@ -74,3 +74,19 @@ docker-compose version 1.21.2, build 1719ceb
     $ docker-compose -f compose-nginx-nodejs-mongodb.yml up
 
 最后，打开浏览器：http://192.168.33.90，你应该能看到 Counter 字样。
+
+## 常用命令
+
+    $ docker volume ls
+    $ docker volume prune
+    $ docker volume inspect delivery_storage
+    $ sudo chown 33:33 -R /var/lib/docker/volumes/delivery_storage
+
+    # docker cp .env delivery_fpm_1:/var/www/html/
+    # docker exec -u root delivery_fpm_1 chown www-data:www-data .env
+
+    $ docker-compose exec fpm php artisan key:generate
+    $ docker-compose exec fpm php artisan migrate
+    $ docker-compose exec fpm php artisan cache:clear
+    $ docker-compose exec fpm php artisan view:clear
+    $ docker-compose exec fpm php artisan route:cache
