@@ -42,6 +42,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Google Analytics
+google_analytics: UA—143464268-3
+
 credits: "&copy; 2018-2019 nighon.me"
 defaults:
   -
