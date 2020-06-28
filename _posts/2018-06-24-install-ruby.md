@@ -3,6 +3,8 @@ title: 用 rbenv 安装 Ruby 运行环境
 categories: ruby
 ---
 
+To be Updated. check [this article](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-18-04)
+
 有两种工具创建 Ruby 运行环境，rbenv 或者 RVM。这里我们介绍 rbenv。
 
 ### 安装 rbenv
