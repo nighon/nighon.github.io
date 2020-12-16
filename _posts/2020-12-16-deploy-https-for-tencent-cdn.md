@@ -6,6 +6,8 @@ title: Deploy HTTPS for Tencent CDN
 
 [详细过程请参考 Digital Ocean 这篇文章](https://www.digitalocean.com/community/tutorials/how-to-acquire-a-let-s-encrypt-certificate-using-dns-validation-with-acme-dns-certbot-on-ubuntu-18-04)
 
+如果申请证书失败，请删除账号文件 `$ sudo rm /etc/letsencrypt/acmedns.json`
+
 - 配置腾讯云 CDN
 
 1. 进入腾讯云云产品 > 内容分发网络 > 证书管理，点击“配置证书”按钮导入 fullchain.pem 和 key.pem
