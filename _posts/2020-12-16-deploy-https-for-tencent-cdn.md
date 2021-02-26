@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Deploy HTTPS for Tencent CDN
 ---
 
