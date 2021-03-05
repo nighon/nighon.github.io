@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Deploy HTTPS for Tencent CDN
+layout: post
+title: "Deploy HTTPS for Tencent CDN"
 ---
 
 - 为 CDN 申请 Let's Encrypt 证书

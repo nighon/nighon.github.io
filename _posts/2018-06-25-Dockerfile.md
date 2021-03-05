@@ -1,5 +1,6 @@
 ---
-title:  Dockerfile 指令说明
+layout: post
+title:  "Dockerfile 指令说明"
 categories: docker
 ---
 

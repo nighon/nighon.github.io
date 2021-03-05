@@ -1,8 +1,7 @@
 ---
-title: 在 Ubuntu 上安装 Docker Compose
+layout: post
+title: "在 Ubuntu 上安装 Docker Compose"
 categories: docker
-header:
-  overlay_image: https://farm5.staticflickr.com/4140/4939863887_84705982fd_b.jpg
 ---
 
 Docker Compose（组合）

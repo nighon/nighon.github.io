@@ -1,5 +1,6 @@
 ---
-title: 用 rbenv 安装 Ruby 运行环境
+layout: post
+title: "用 rbenv 安装 Ruby 运行环境"
 categories: ruby
 ---
 

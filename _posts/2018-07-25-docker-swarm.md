@@ -1,8 +1,7 @@
 ﻿---
-title: Docker Swarm（集群）
+layout: post
+title: "Docker Swarm（集群）"
 categories: docker
-header:
-  overlay_image: https://farm5.staticflickr.com/4140/4939863887_84705982fd_b.jpg
 ---
 ### 安装 Docker
 

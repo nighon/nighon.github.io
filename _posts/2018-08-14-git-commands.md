@@ -1,5 +1,6 @@
 ﻿---
-title: Git 常用命令
+layout: post
+title: "Git 常用命令"
 categories: git
 ---
 

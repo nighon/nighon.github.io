@@ -1,5 +1,6 @@
 ﻿---
-title: 安装 Python 环境
+layout: post
+title: "安装 Python 环境"
 categories: python
 ---
 

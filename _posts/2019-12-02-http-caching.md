@@ -1,5 +1,6 @@
 ---
-title: HTTP Caching
+layout: post
+title: "HTTP Caching"
 ---
 
 Let’s see [Google’s flow chart about what cache-control policy to use](https://itnext.io/laravel-the-hidden-setcacheheaders-middleware-4cd594ba462f):
