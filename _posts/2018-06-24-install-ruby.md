@@ -41,7 +41,7 @@ Restart your shell so that PATH changes take effect. Verify that rbenv is proper
 > 如果无法直接在线安装，可以[安装下载好的 Ruby 文件](https://stackoverflow.com/questions/35589469/install-ruby-using-rbenvs-downloaded-file/35589999#35589999)。
 >
 >    $ mkdir ~/.rbenv/cache  
->    $ cp ~/Downloads/ruby-2.2.2.tar.bz2 ~/.rbenv/cache/
+>    $ cp ~/Downloads/ruby-2.7.2.tar.bz2 ~/.rbenv/cache/
 >    $ env RUBY_BUILD_MIRROR_URL=file:///home/$(whoami)/.rbenv/cache/ruby-2.7.2.tar.bz2
 
     $ rbenv install --verbose 2.7.2
