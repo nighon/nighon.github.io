@@ -1,0 +1,16 @@
+---
+permalink: "/js/searchable.json"
+---
+{
+  "items" : [
+    {% for post in site.posts %}
+      {
+        "title": "{{ post.title }}",
+        "description": "{{ post.description }}",
+        "url": "{{ post.url }}",
+        "type": "Post",
+        "categories": "{{ post.categories }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

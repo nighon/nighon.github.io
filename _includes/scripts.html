@@ -1,0 +1,12 @@
+<script src="{{ '/assets/vendor/tob/anime.min.js' | relative_url  }}"></script>
+<script type="text/javascript" src="{{ '/assets/vendor/tob/app.js?v=1' | relative_url  }}"></script>
+<script>
+	// Clear localStorage if number of posts have changed
+	app.search.postCountKey = "postCount";
+	var postCountCached = parseInt(localStorage.getItem(app.search.postCountKey));
+	var postCount = 126;
+
+	// If number of posts have changed, clear cache
+	if (postCount != postCountCached) { localStorage.clear(); }
+	localStorage.setItem(app.search.postCountKey, 126); 
+</script>
