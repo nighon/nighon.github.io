@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title}}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' }}">
+  </head>
+  <body>
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% if jekyll.environment != "development" %}
+      {% include google-analytics.html %}
+    {% endif %}
+
+  </body>
+</html>
