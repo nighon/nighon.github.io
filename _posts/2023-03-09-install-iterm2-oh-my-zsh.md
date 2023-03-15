@@ -35,4 +35,4 @@ bgcolor: "#cfc"
 
 最终效果如图
 
-![](/assets/img/screenshot-iterm2-color-preset.png)
+![](/assets/img/screen-mock-1.jpg)
