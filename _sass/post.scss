@@ -20,9 +20,16 @@
   //   color: currentColor;
   // }
 
+  .highlight {
+    background-color: rgba(var(--darkgray));
+    color: rgba(var(--lightgray));
+
+    .c1 {
+      color: #0cc;
+    }
+  }
+
   div.highlight {
-    background-color: rgba(var(--black), .8);
-    color: rgba(var(--white), .8);
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: .5rem;
@@ -36,7 +43,7 @@
     color: currentColor;
 
     &:hover {
-      color: rgba(var(--black), 1);
+      color: rgba(var(--black));
     }
   }
 

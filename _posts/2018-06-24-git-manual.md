@@ -132,3 +132,15 @@ clip < ~/.ssh/id_rsa.pub
 > 然后本地修改，再重置远程分支 master，重新发起 PR
 >
 >    $ git push origin +ea75bd4a02afa2bf09ab5d33:master
+
+## Git 常用指令
+
+以 HEAD~ 为例
+
+```ssh
+# 列出改动
+git diff HEAD~
+
+# 列出改动的文件
+git diff-tree --no-commit-id --name-only -r HEAD~
+```

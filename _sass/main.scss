@@ -6,7 +6,8 @@
 
 :root {
   --black: 0,0,0;
-  --white: 255,255,255;
+  --lightgray: 200,200,200;
+  --darkgray: 50,50,50;
   --yellow: 255,255,0;
   --lightyellow: 255,255,240;
 }
@@ -21,8 +22,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(var(--black), .8);
-  background-color: rgba(var(--lightyellow), 1);
+  color: rgba(var(--darkgray));
+  background-color: rgba(var(--lightyellow));
 }
 
 // h1 {
@@ -51,11 +52,11 @@ p {
 }
 
 a {
-  color: rgba(var(--black), .8);
+  color: rgba(var(--darkgray));
   text-decoration: underline;
 
   &:hover {
-    color: rgba(var(--black), 1);
+    color: rgba(var(--black));
   }
 }
 
