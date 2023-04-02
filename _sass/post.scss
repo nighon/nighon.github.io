@@ -104,14 +104,15 @@ article {
     border-radius: .5em;
     font-family: var(--font-mono);
     line-height: 1.3em;
-    background-color: rgba(var(--darkgray));
-    color: rgba(var(--lightgray));
+    background-color: rgb(var(--darkgray));
+    color: rgb(var(--lightgray));
     overflow: auto;
 
     > pre {
       max-width: 700px;
       margin: 0 auto;
       font-size: 14px;
+      background-color: rgb(var(--darkgray));
     }
   }
 
@@ -161,7 +162,7 @@ article {
   a {
     color: inherit;
     &:hover {
-      color: rgba(var(--black));
+      color: rgb(var(--black));
     }
   }
 
@@ -185,6 +186,22 @@ article {
 
 code {
   font-family: var(--font-mono);
+}
+
+div.language-shell .nv {
+  // color: gray;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+div.highlight .c,
+div.highlight .c1 {
+  color: gray;
+}
+
+code.highlighter-rouge {
+  color: #c00;
+  font-size: .9em;
 }
 
 @media (max-width: 900px) {

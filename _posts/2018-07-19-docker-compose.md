@@ -15,11 +15,15 @@ Compose is a tool for defining and running multi-container Docker applications.
 
 Run this command to download the latest version of Docker Compose:
 
-    $ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+```shell
+$ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+```
 
 Apply executable permissions to the binary:
 
-    $ sudo chmod +x /usr/local/bin/docker-compose
+```shell
+$ sudo chmod +x /usr/local/bin/docker-compose
+```
 
 Optionally, install [command completion](https://docs.docker.com/compose/completion/) for the bash and zsh shell.
 
@@ -54,42 +58,50 @@ mongodb:
 
 创建 VOLUMES 目录
 
-`$ mkdir -p /home/vagrant/nginx/conf.d`
-`$ mkdir -p /home/vagrant/mongodb`
+```shell
+$ mkdir -p /home/vagrant/nginx/conf.d
+$ mkdir -p /home/vagrant/mongodb
+```
 
 创建 Nginx 反向代理配置文件 /home/vagrant/nginx/conf.d/default.conf
 
-    server {
-        listen 80;
-        listen [::]:80 ipv6only=on;
-        server_name _;
+```nginx
+server {
+    listen 80;
+    listen [::]:80 ipv6only=on;
+    server_name _;
 
-        location / {
-            proxy_pass http://app:3000;
-            proxy_set_header Host $http_host;
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header X-Real-IP $remote_addr;
-        }
+    location / {
+        proxy_pass http://app:3000;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
     }
+}
+```
 
 运行 docker-compose
 
-    $ docker-compose -f compose-nginx-nodejs-mongodb.yml up
+```shell
+$ docker-compose -f compose-nginx-nodejs-mongodb.yml up
+```
 
 最后，打开浏览器：http://192.168.33.90，你应该能看到 Counter 字样。
 
 ## 常用命令
 
-    $ docker volume ls
-    $ docker volume prune
-    $ docker volume inspect delivery_storage
-    $ sudo chown 33:33 -R /var/lib/docker/volumes/delivery_storage
+```shell
+$ docker volume ls
+$ docker volume prune
+$ docker volume inspect delivery_storage
+$ sudo chown 33:33 -R /var/lib/docker/volumes/delivery_storage
 
-    # docker cp .env delivery_fpm_1:/var/www/html/
-    # docker exec -u root delivery_fpm_1 chown www-data:www-data .env
+$ docker cp .env delivery_fpm_1:/var/www/html/
+$ docker exec -u root delivery_fpm_1 chown www-data:www-data .env
 
-    $ docker-compose exec fpm php artisan key:generate
-    $ docker-compose exec fpm php artisan migrate
-    $ docker-compose exec fpm php artisan cache:clear
-    $ docker-compose exec fpm php artisan view:clear
-    $ docker-compose exec fpm php artisan route:cache
+$ docker-compose exec fpm php artisan key:generate
+$ docker-compose exec fpm php artisan migrate
+$ docker-compose exec fpm php artisan cache:clear
+$ docker-compose exec fpm php artisan view:clear
+$ docker-compose exec fpm php artisan route:cache
+```

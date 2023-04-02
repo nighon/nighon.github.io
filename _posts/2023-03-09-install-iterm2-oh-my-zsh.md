@@ -6,21 +6,29 @@ bgcolor: "#cfc"
 
 ## 安装 Homebrew
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```shell
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 ## 安装 iTerm2
 
-    brew cask install iterm2
+```shell
+$ brew cask install iterm2
+```
 
 ## 安装 zsh 和 oh-my-zsh
 
-    brew install zsh && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```shell
+$ brew install zsh && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 安装完毕后，oh-my-zsh 会自动替换原来默认的终端。
 
 ## 设置色彩和样式
 
-    cd Downloads && curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors
+```shell
+$ cd Downloads && curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors
+```
 
 把颜色预设包下载到 Downloads 目录后，设置 iTerm2 使用刚才安装的主题文件。打开 iTerm2 然后按下快捷键 “CMD + , " 打开 iTerm2 偏好设置。
 点开 Profile 下面的 Colors 页面，在右下角找到 Color Presets 的选项。
