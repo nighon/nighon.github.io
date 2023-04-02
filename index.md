@@ -5,12 +5,14 @@
 layout: home
 ---
 
-<ul class="posts-list">
+<div class="posts-list">
+  <ul>
   {% for post in site.posts %}
-  <li class="posts-list-item">
-    <a href="{{ post.url }}" class="animate">
-      <h2>{{ post.title }}</h2>
-    </a>
-  </li>
+    <li class="posts-list-item">
+      <a href="{{ post.url }}" class="animate">
+        <h2>{{ post.title }}</h2>
+      </a>
+    </li>
   {% endfor %}
-</ul>
+  </ul>
+</div>
