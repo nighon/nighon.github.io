@@ -17,15 +17,21 @@
     // &::before {
     //   content: "";
     //   display: block;
-    //   width: calc(100% - 6vw);
-    //   height: 4em;
+    //   width: calc(100% - 2vw);
+    //   height: 1.7em;
     //   position: relative;
-    //   left: 3vw;
-    //   top: 5.25em;
+    //   left: 1vw;
+    //   top: 2em;
     //   transform: rotate(1deg);
     //   z-index: -1;
     //   background-color: #ff0;
     // }
+  }
+
+  .post-meta {
+    margin-top: 5em;
+    margin-bottom: 1em;
+    color: #666;
   }
 }
 
@@ -166,6 +172,14 @@ article {
     margin-top: 1em;
     margin-bottom: 1em;
     height: auto;
+  }
+
+  img.small-image {
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

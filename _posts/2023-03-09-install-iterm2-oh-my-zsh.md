@@ -31,8 +31,8 @@ bgcolor: "#cfc"
 
 然后，选中刚才导入的预设，就会像这样显示在列表中。
 
-![](/assets/img/screenshot-iterm2-options.png)
+<img src="/assets/img/screenshot-iterm2-options.png" class="small-image" />
 
-最终效果如图
+设置完成
 
 ![](/assets/img/screen-mock-1.jpg)
