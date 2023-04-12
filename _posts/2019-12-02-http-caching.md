@@ -6,11 +6,11 @@ bgcolor: "#FDF0EC"
 
 Let’s see [Google’s flow chart about what cache-control policy to use](https://itnext.io/laravel-the-hidden-setcacheheaders-middleware-4cd594ba462f):
 
-![flow chart about what cache-control policy](/assets/img/flow-of-http-caching.png)
+<img src="/assets/img/flow-of-http-caching.png" class="small-image" />
 
 ### Cache-Control Directive
 
-[`must-revalidate` 与 `no-cache` 的区别](https://stackoverflow.com/a/19938619)
+[must-revalidate 与 no-cache 的区别](https://stackoverflow.com/a/19938619)
 
 **must-revalidate** means "once the cache expires, refuse to return stale responses to the user even if they say that stale responses are acceptable". 意思是“只要缓存过期，就拒绝返回旧的响应内容给用户，即使用户能够接受”。
 

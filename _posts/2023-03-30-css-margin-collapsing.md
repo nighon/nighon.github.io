@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CSS Margin Collapsing (边距坍塌)"
+title: "CSS Margin Collapsing"
 ---
 
 ## 1. 上下两个元素垂直边距坍塌

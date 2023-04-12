@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "在 Ubuntu 上安装 Docker Compose"
+title: "安装 Express, Nginx 和 Docker Compose"
 categories: docker
 bgcolor: "#98bec8"
 color: "#fff"
@@ -9,7 +9,7 @@ color: "#fff"
 Docker Compose（组合）
 
 Compose is a tool for defining and running multi-container Docker applications.
-组合，是为了运行多个容器，把不同的 Docker 应用组合在一起。
+Compose 是为了运行多个容器，把不同的 Docker 应用组合在一起。
 
 [Install Compose on Linux systems](https://docs.docker.com/compose/install/#install-compose)
 

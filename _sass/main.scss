@@ -63,6 +63,7 @@ h1 {
   font-size: 45px;
   font-weight: normal;
   font-style: normal;
+  line-height: 1.9em;
   vertical-align: baseline;
   margin: 0;
   padding: 0;
@@ -74,14 +75,13 @@ header {
 
   h1 {
     font-size: 11px;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-weight: 800;
     padding-top: 2.9vmin;
     text-align: center;
     font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
     z-index: 100;
-    // top: 2px;
     position: relative;
 
     a {
@@ -99,16 +99,39 @@ header {
 }
 
 footer {
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
   text-align: center;
-  color: rgba(var(--black), .6);
+  color: #999;
   font-size: 14px;
 }
 
-.posts-list {
-  padding-top: 21vh;
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    margin: calc(5em + 3vmin) auto 0;
+    line-height: 1.9em;
+  }
+}
+
+.not-found {
+  text-align: center;
+
+  h1 {
+    font-size: calc(24px + 8vmin);
+  }
+}
+
+.posts-list {
   ul {
     list-style: none;
     max-width: 500px;
@@ -122,7 +145,7 @@ footer {
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: 400;
     margin: 0;
   }
@@ -133,14 +156,15 @@ a.animate {
   position: relative;
   text-decoration: none;
   color: currentColor;
+  padding-bottom: 1px;
 
   &::before {
     content: "";
     position: absolute;
     display: block;
     width: 100%;
-    height: 1px;
-    bottom: 3px;
+    height: 2px;
+    bottom: 0;
     left: 0;
     background-color: currentColor;
     transform: scaleX(0);
@@ -153,32 +177,5 @@ a.animate {
     }
   }
 }
-
-// @media (min-width: 576px) {
-//   .container {
-//     max-width: 540px;
-//   }
-// }
-
-// @media (min-width: 768px) {
-//   .container {
-//     max-width: 720px;
-//   }
-// }
-
-// @media (min-width: 992px) {
-//   .container {
-//     max-width: 960px;
-//   }
-// }
-
-// @media (min-width: 1200px) {
-//   .container {
-//     max-width: 1140px;
-//   }
-// }
-
-// @media (min-width: 1400px) {
-// }
 
 @import "post";

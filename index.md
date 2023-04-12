@@ -8,7 +8,7 @@ layout: home
 <div class="posts-list">
   <ul>
   {% for post in site.posts %}
-    <li class="posts-list-item">
+    <li>
       <a href="{{ post.url }}" class="animate">
         <h2>{{ post.title }}</h2>
       </a>

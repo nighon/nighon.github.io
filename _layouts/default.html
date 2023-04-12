@@ -9,11 +9,7 @@
   </head>
   <body>
 
-    {% include header.html %}
-
     {{ content }}
-
-    {% include footer.html %}
 
     {% if jekyll.environment != "development" %}
       {% include google-analytics.html %}

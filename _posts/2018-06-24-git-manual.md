@@ -6,10 +6,10 @@ categories: git
 
 ## 设置密钥
 
-权限校验有两种方式：密码和密钥，推荐使用密钥校验。方法如下：
+权限校验有两种方式：密码和密钥，推荐使用密钥校验。生成秘钥：
 
 ```shell
-$ ssh-keygen -t rsa -b 4096 -C "your.name@gmail.com"    # 生成秘钥
+$ ssh-keygen -t rsa -b 4096 -C "your.name@gmail.com"
 ```
 
 并加入到 Gitlab 上：Profile Settings > SSH Keys
@@ -82,6 +82,7 @@ $ git checkout -b fix-something-wrong master
 例子以 HEAD~ 为 commit id
 
 ```shell
+$ git clean -fd             # 清除未包含的文件
 $ git checkout HEAD~ -- file1/to/restore file2/to/restore   # 恢复文件
 $ git push origin +HEAD~:master                       # 强制推送（覆盖）远程分支
 $ git diff HEAD~                                      # 列出改动
