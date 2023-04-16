@@ -37,7 +37,7 @@
 
 article {
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.8em;
 
   h1, h2, h3 {
     // position: relative;
@@ -82,7 +82,6 @@ article {
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto 2em;
-    list-style-position: inside;
   }
 
   li {
@@ -211,6 +210,10 @@ code.highlighter-rouge {
     img {
       margin-left: -20px;
       max-width: calc(100% + 40px);
+    }
+
+    ol, ul {
+      list-style-position: inside;
     }
 
     div.highlight {
