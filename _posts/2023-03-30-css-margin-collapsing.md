@@ -3,7 +3,7 @@ layout: post
 title: "CSS Margin Collapsing"
 ---
 
-## 1. 上下两个元素垂直边距坍塌
+## 1. 上下两个相邻元素垂直边距折叠
 
 当上下两个元素之间都有垂直边距时，你可能认为两个元素的边距是两个边距之和。而实际上，两个元素之间的边距只取两者之间大的那个边距。
 
@@ -15,7 +15,7 @@ title: "CSS Margin Collapsing"
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-## 2. 父元素和子元素垂直边距坍塌
+## 2. 父元素和子元素垂直边距折叠
 
 当父元素和子元素都有同方向的垂直边距（都有 margin-top，或者都有 margin-bottom），只有大的那个边距会生效。
 
