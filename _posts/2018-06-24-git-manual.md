@@ -85,6 +85,7 @@ $ git checkout -b fix-something-wrong master
 $ git clean -fd             # 清除未包含的文件
 $ git checkout HEAD~ -- file1/to/restore file2/to/restore   # 恢复文件
 $ git push origin +HEAD~:master                       # 强制推送（覆盖）远程分支
+$ git log -p -- filename                              # 列出单个文件历史改动记录
 $ git diff HEAD~                                      # 列出改动
 $ git diff-tree --no-commit-id --name-only -r HEAD~   # 列出改动的文件
 $ git branch -d my-awesome-feature                    # 删除本地分支
