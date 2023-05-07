@@ -79,14 +79,23 @@ $ git checkout -b fix-something-wrong master
 
 ## 常用指令
 
-例子以 HEAD~ 为 commit id
+以 HEAD~ 为示范 commit id
+以 README.md 为示范文件名
 
 ```shell
-$ git clean -fd             # 清除未包含的文件
-$ git checkout HEAD~ -- file1/to/restore file2/to/restore   # 恢复文件
+$ git checkout HEAD~ -- README.md                     # 恢复文件
+$ git clean -fd                                       # 清除未包含的文件
 $ git push origin +HEAD~:master                       # 强制推送（覆盖）远程分支
-$ git log -p -- filename                              # 列出单个文件历史改动记录
+$ git log -p -- README.md                             # 列出单个文件历史改动记录
 $ git diff HEAD~                                      # 列出改动
 $ git diff-tree --no-commit-id --name-only -r HEAD~   # 列出改动的文件
 $ git branch -d my-awesome-feature                    # 删除本地分支
+```
+
+branch，tag 操作
+
+```shell
+$ git tag rc-1                                        # 新建 tag, -a 'create release candidate 1'
+$ git push origin --all                               # 推送所有 branches
+$ git push origin --tags                              # 推送所有 tags
 ```
