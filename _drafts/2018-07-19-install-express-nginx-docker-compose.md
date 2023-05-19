@@ -6,10 +6,7 @@ bgcolor: "#98bec8"
 color: "#fff"
 ---
 
-Docker Compose（组合）
-
 Compose is a tool for defining and running multi-container Docker applications.
-Compose 是为了运行多个容器，把不同的 Docker 应用组合在一起。
 
 [Install Compose on Linux systems](https://docs.docker.com/compose/install/#install-compose)
 

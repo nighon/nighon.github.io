@@ -5,6 +5,9 @@ categories: ruby
 bgcolor: "#8e5ea2"
 color: "#fff"
 ---
+
+安装 Ruby 运行环境的方法有 rbenv, RVM 等等，这里介绍 rbenv。
+
 ### 安装 rbenv
 
 先安装依赖包

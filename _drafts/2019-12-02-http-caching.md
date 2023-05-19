@@ -4,6 +4,8 @@ title: "HTTP Caching"
 bgcolor: "#FDF0EC"
 ---
 
+介绍 HTTP 缓存。
+
 Let’s see [Google’s flow chart about what cache-control policy to use](https://itnext.io/laravel-the-hidden-setcacheheaders-middleware-4cd594ba462f):
 
 <img src="/assets/img/flow-of-http-caching.png" class="small-image" />

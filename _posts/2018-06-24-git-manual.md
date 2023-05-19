@@ -2,7 +2,11 @@
 layout: post
 title: "Git 常用操作"
 categories: git
+bgcolor: "#f0efe7"
+color: "#000"
 ---
+
+Git 常用操作手册。
 
 ## 设置密钥
 

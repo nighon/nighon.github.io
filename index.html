@@ -9,9 +9,17 @@ layout: home
   <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}" class="animate">
+      <a href="{{ post.url }}" class="animate title">
         <h2>{{ post.title }}</h2>
       </a>
+
+      {% if post.date %}
+        <div class="published-at">{{ post.date | date: "%B %d, %Y" }}</div>
+      {% endif %}
+
+      {% if post.excerpt %}
+        <div class="summary">{{ post.excerpt }}</div>
+      {% endif %}
     </li>
   {% endfor %}
   </ul>

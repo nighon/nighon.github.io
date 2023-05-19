@@ -4,6 +4,8 @@ title: "在 macOS 系统上安装 iTerm2 和 oh-my-zsh"
 bgcolor: "#cfc"
 ---
 
+macOS 上的命令行的开发环境组合：iTerm2 和 oh-my-zsh。
+
 ## 安装 Homebrew
 
 ```shell

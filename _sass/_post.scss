@@ -3,16 +3,17 @@
 }
 
 .post-head {
-  padding: 21vh 20px;
+  padding: 15vh 20px;
   text-align: center;
 
   h1 {
     max-width: 980px;
     margin: 0 auto;
-    font-size: 64px;
+    font-size: 3em;
     font-weight: 600;
     line-height: 1.3em;
     letter-spacing: .015em;
+    color: forestgreen;
 
     // &::before {
     //   content: "";
@@ -24,7 +25,7 @@
     //   top: 2em;
     //   transform: rotate(1deg);
     //   z-index: -1;
-    //   background-color: #ff0;
+    //   background-color: yellow;
     // }
   }
 
@@ -36,6 +37,7 @@
 }
 
 article {
+  margin-top: 20px;
   font-size: 18px;
   line-height: 1.8em;
 
@@ -231,6 +233,6 @@ code.highlighter-rouge {
 
 @media (max-width: 1200px) {
   .post-head h1 {
-    font-size: calc(16px + 4vw);
+    font-size: 2em;
   }
 }

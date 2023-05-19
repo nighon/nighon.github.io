@@ -1,7 +1,7 @@
 :root {
   --black: 0,0,0;
   --lightgray: 200,200,200;
-  --darkgray: 50,50,50;
+  --darkgray: 51,51,51;
   --yellow: 255,255,0;
   --lightyellow: 255,255,240;
   --font-mono: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
@@ -15,6 +15,7 @@
 
 html,
 div,
+main,
 span,
 object,
 iframe,
@@ -52,11 +53,15 @@ table {
 
 body {
   font: normal 16px/1.9em -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: rgba(var(--darkgray));
-  background-color: rgba(var(--lightyellow));
+  color: rgb(var(--darkgray));
+  background-color: white;
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 h1 {
@@ -69,61 +74,19 @@ h1 {
   padding: 0;
 }
 
-header {
-  position: absolute;
-  width: 100%;
-
-  h1 {
-    font-size: 11px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    padding-top: 2.9vmin;
-    text-align: center;
-    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
-    z-index: 100;
-    position: relative;
-
-    a {
-      text-decoration: none;
-      // transition: color 0.2s ease-in-out;
-      // transform: translateZ(0);
-      position: relative;
-      color: #666;
-
-      &:hover {
-        color: #000;
-      }
-    }
-  }
-}
-
-footer {
-  clear: both;
-  margin: 80px 20px 40px;
-  text-align: center;
-  color: #999;
-}
-
-.wrapper {
+main {
   clear: both;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  .main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // align-items: center;
-    // text-align: center;
-    margin: calc(5em + 3vmin) auto 0;
-    line-height: 1.9em;
-  }
 }
 
 .not-found {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
   h1 {
@@ -132,23 +95,45 @@ footer {
 }
 
 .posts-list {
+  flex: 1;
+  max-width: 700px;
+  margin: 200px auto 0;
+
+  a.title {
+    margin: .5em 0;
+    color: forestgreen;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3em;
+    }
+  }
+
+  .published-at {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.9em;
+    color: #999;
+  }
+
   ul {
     list-style: none;
-    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
-  }
 
-  li {
-    margin-bottom: 1.5em;
+    li {
+      margin-bottom: 2em;
+    }
   }
+}
 
-  h2 {
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0;
-  }
+footer {
+  flex: 0;
+  margin: 80px 20px 40px;
+  text-align: center;
+  color: #999;
 }
 
 a.animate {
@@ -178,4 +163,5 @@ a.animate {
   }
 }
 
+@import "header";
 @import "post";

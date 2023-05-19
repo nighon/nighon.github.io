@@ -1,0 +1,64 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 4px 0;
+
+  nav {
+    display: flex;
+    align-items: center;
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    .brand {
+      font-size: 1.5em;
+      margin-right: 1em;
+      display: none;
+    }
+
+    .button {
+      display: none;
+    }
+
+    .navbar {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        // margin-right: auto;
+        list-style-type: none;
+
+        h5 {
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+        }
+
+        a {
+          padding: .5em 1em;
+          color: currentColor;
+          opacity: .6;
+          text-decoration: none;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .search {
+      flex: 0;
+      display: none;
+    }
+  }
+}
