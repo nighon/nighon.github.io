@@ -5,7 +5,7 @@ layout: default
 {% include header.html %}
 
 <div class="post">
-  <div class="post-head">
+  <div class="post-head" style="background-color: {{ page.bgcolor | default: site.bgcolor }}; color: {{ page.color | default: site.color }};">
     <h1>{{ page.title }}</h1>
   </div>
   <article>
