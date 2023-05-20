@@ -2,6 +2,7 @@
 layout: post
 title: "用 rbenv 安装 Ruby 环境"
 categories: ruby
+image: "/assets/img/photo-1459411552884-841db9b3cc2a.avif"
 bgcolor: "#8e5ea2"
 color: "#fff"
 ---

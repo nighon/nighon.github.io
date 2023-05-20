@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CSS Margin Collapsing"
+image: "/assets/img/photo-1614813502891-ee4d23e03dba.avif"
 ---
 
 CSS 边距在某些情况下会产生折叠 (Margin Collapsing)，此时，边距不会相加。

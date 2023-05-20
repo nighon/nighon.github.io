@@ -3,7 +3,7 @@
 }
 
 .post-head {
-  padding: 20vh 20px;
+  padding: 15vh 20px 42vh;
   text-align: center;
 
   h1 {
@@ -24,7 +24,7 @@
     //   top: 2em;
     //   transform: rotate(1deg);
     //   z-index: -1;
-    //   background-color: yellow;
+    //   background-color: forestgreen;
     // }
   }
 
@@ -36,9 +36,22 @@
 }
 
 article {
-  margin-top: 100px;
+  margin-top: 60px;
   font-size: 18px;
   line-height: 1.8em;
+
+  .banner {
+    max-width: 740px;
+    margin: -35vh auto 6em;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 1em;
+      // border: 3px solid gray;
+    }
+  }
 
   h1, h2, h3 {
     // position: relative;
@@ -47,7 +60,7 @@ article {
     font-weight: 400;
     line-height: 1.3em;
     letter-spacing: -0.015em;
-    max-width: 700px;
+    max-width: 740px;
     padding-left: 20px;
     padding-right: 20px;
     scroll-margin-top: 1em;
@@ -59,7 +72,7 @@ article {
 
   p {
     margin: 0 auto 2em;
-    max-width: 700px;
+    max-width: 740px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -79,7 +92,7 @@ article {
   // }
 
   ul, ol {
-    max-width: 700px;
+    max-width: 740px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto 2em;
@@ -97,7 +110,6 @@ article {
   }
 
   div.highlight {
-    box-sizing: border-box;
     max-width: 820px;
     margin: 0 auto 2em;
     padding: 2em 1em;
@@ -109,7 +121,7 @@ article {
     overflow: auto;
 
     > pre {
-      max-width: 700px;
+      max-width: 740px;
       margin: 0 auto;
       font-size: 14px;
       background-color: inherit;
@@ -117,7 +129,7 @@ article {
   }
 
   blockquote {
-    max-width: 700px;
+    max-width: 740px;
     margin: 0 auto 2em;
     padding-left: 20px;
     padding-right: 20px;
@@ -166,7 +178,7 @@ article {
     }
   }
 
-  > img {
+  p img {
     width: 900px;
     max-width: 100vw;
     margin-left: -100px;
@@ -175,7 +187,7 @@ article {
     height: auto;
   }
 
-  img.small-image {
+  p img.small-image {
     width: auto;
     max-width: 100%;
     display: block;
@@ -206,9 +218,15 @@ code.highlighter-rouge {
   background-color: #eee;
 }
 
+@media (max-width: 1200px) {
+  .post-head h1 {
+    font-size: 2.5em;
+  }
+}
+
 @media (max-width: 900px) {
   article {
-    img {
+    p img {
       margin-left: -20px;
       max-width: calc(100% + 40px);
     }
@@ -230,8 +248,10 @@ code.highlighter-rouge {
   }
 }
 
-@media (max-width: 1200px) {
-  .post-head h1 {
-    font-size: 2.5em;
+@media (max-width: 768px) {
+  article {
+    .banner img {
+      border-radius: 0;
+    }
   }
 }

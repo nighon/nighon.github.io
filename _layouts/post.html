@@ -5,10 +5,16 @@ layout: default
 {% include header.html %}
 
 <div class="post">
-  <div class="post-head" style="background-color: {{ page.bgcolor | default: site.bgcolor }}; color: {{ page.color | default: site.color }};">
+  <div class="post-head">
     <h1>{{ page.title }}</h1>
   </div>
   <article>
+    {% if page.image %}
+    <div class="banner">
+      <img src="{{ page.image }}" />
+    </div>
+    {% endif %}
+
     {{ content }}
   </article>
 </div>

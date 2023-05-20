@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "在 macOS 系统上安装 iTerm2 和 oh-my-zsh"
+image: "/assets/img/screen-mock-1.jpg"
 bgcolor: "#cfc"
 ---
 
@@ -44,5 +45,3 @@ $ cd Downloads && curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-
 <img src="/assets/img/screenshot-iterm2-options.png" class="small-image" />
 
 设置完成
-
-![](/assets/img/screen-mock-1.jpg)
