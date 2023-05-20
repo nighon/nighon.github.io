@@ -2,7 +2,7 @@
 layout: post
 title: "安装 Python 环境"
 categories: python
-image: "/assets/img/photo-1458819714733-e5ab3d536722.avif"
+image: "/assets/img/photo-1458819714733-e5ab3d536722-1.avif"
 bgcolor: "#7290a4"
 color: "#fff"
 ---

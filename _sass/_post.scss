@@ -3,12 +3,12 @@
 }
 
 .post-head {
-  padding: 15vh 20px 42vh;
+  padding: 10vh 20px 35vh;
   text-align: center;
 
   h1 {
     max-width: 980px;
-    margin: 0 auto;
+    margin: .5em auto;
     font-size: 3.5em;
     font-weight: 600;
     line-height: 1.3em;
@@ -28,6 +28,12 @@
     // }
   }
 
+  p {
+    font-size: 18px;
+    color: currentColor;
+    opacity: .5;
+  }
+
   .post-meta {
     max-width: 980px;
     margin: 5em auto 1em;
@@ -42,7 +48,7 @@ article {
 
   .banner {
     max-width: 740px;
-    margin: -35vh auto 6em;
+    margin: -36vh auto 5em;
 
     img {
       width: 100%;
@@ -102,11 +108,16 @@ article {
     margin: .5em 0;
   }
 
-  .cp_embed_wrapper {
+  .codepen, .cp_embed_wrapper {
     max-width: 820px;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
     margin: 0 auto 2em;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 1em 0;
   }
 
   div.highlight {
@@ -250,8 +261,10 @@ code.highlighter-rouge {
 
 @media (max-width: 768px) {
   article {
-    .banner img {
-      border-radius: 0;
+    .banner {
+      img {
+        border-radius: 0;
+      }
     }
   }
 }
