@@ -151,6 +151,7 @@ a.animate {
     left: 0;
     background-color: currentColor;
     transform: scaleX(0);
+    transform-origin: top left;
     transition: transform .3s ease;
   }
 
