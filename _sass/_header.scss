@@ -3,61 +3,30 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  // background-color: white;
-  // color: black;
-  padding: 4px 0;
+  text-align: center;
+  padding: 20px var(--gutter-x);
 
-  nav {
-    display: flex;
-    align-items: center;
-    max-width: 740px;
-    margin: 0 auto;
-    padding: 0 20px;
+  h5 {
+    font-size: 11px;
+    font-weight: 800;
+    // text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0;
+    margin: 0;
+  }
 
-    .brand {
-      font-size: 1.5em;
-      margin-right: 1em;
-      display: none;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    opacity: .75;
+
+    &:active {
+      color: inherit;
     }
 
-    .button {
-      display: none;
-    }
-
-    .navbar {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-
-      ul {
-        display: flex;
-        // margin-right: auto;
-        list-style-type: none;
-
-        h5 {
-          font-size: 11px;
-          font-weight: 800;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-        }
-
-        a {
-          padding: .5em 1em;
-          color: currentColor;
-          // opacity: .8;
-          text-decoration: none;
-
-          // &:hover {
-          //   opacity: 1;
-          // }
-        }
-      }
-    }
-
-    .search {
-      flex: 0;
-      display: none;
+    &:hover {
+      opacity: 1;
     }
   }
 }

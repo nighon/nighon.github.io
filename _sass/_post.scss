@@ -1,43 +1,28 @@
-.post {
-  overflow: hidden;
-}
-
 .post-head {
-  padding: 10vh 20px 35vh;
+  padding: 10vh var(--gutter-x) 35vh;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   h1 {
     max-width: 980px;
     margin: .5em auto;
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 600;
     line-height: 1.3em;
-    letter-spacing: .015em;
-
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   width: calc(100% - 2vw);
-    //   height: 1.7em;
-    //   position: relative;
-    //   left: 1vw;
-    //   top: 2em;
-    //   transform: rotate(1deg);
-    //   z-index: -1;
-    //   background-color: forestgreen;
-    // }
   }
 
   p {
-    font-size: 18px;
+    max-width: 980px;
+    margin: .5em auto;
     color: currentColor;
     opacity: .5;
   }
+}
 
-  .post-meta {
-    max-width: 980px;
-    margin: 5em auto 1em;
-    color: #666;
+@media (min-width: 1200px) {
+  .post-head h1 {
+    font-size: 3.5em;
   }
 }
 
@@ -45,8 +30,9 @@ article {
   margin-top: 60px;
   font-size: 18px;
   line-height: 1.8em;
+  overflow-wrap: break-word;
 
-  .banner {
+  > .banner {
     max-width: 740px;
     margin: -36vh auto 5em;
 
@@ -59,16 +45,13 @@ article {
     }
   }
 
-  h1, h2, h3 {
-    // position: relative;
+  > h1, > h2, > h3 {
+    max-width: 740px;
+    padding: 0 var(--gutter-x);
     margin: 3em auto 1em;
     font-size: 1.7em;
     font-weight: 400;
     line-height: 1.3em;
-    letter-spacing: -0.015em;
-    max-width: 740px;
-    padding-left: 20px;
-    padding-right: 20px;
     scroll-margin-top: 1em;
 
     &:first-child {
@@ -76,110 +59,24 @@ article {
     }
   }
 
-  p {
-    margin: 0 auto 2em;
+  > p {
     max-width: 740px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  // img {
-  //   max-width: calc(100% + 2em);
-  //   margin-left: -1em;
-  //   padding: 1em 0;
-  // }
-
-  // blockquote {
-  //   background-color: #ffd;
-  //   border-left: 10px solid #fe0;
-  //   margin: 1em 0;
-  //   padding: 2em 2em;
-  //   color: currentColor;
-  // }
-
-  ul, ol {
-    max-width: 740px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 var(--gutter-x);
     margin: 0 auto 2em;
-  }
 
-  li {
-    margin: .5em 0;
-  }
-
-  .codepen, .cp_embed_wrapper {
-    max-width: 820px;
-    height: 400px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid;
-    margin: 0 auto 2em;
-    padding: 1em 0;
-  }
-
-  div.highlight {
-    max-width: 820px;
-    margin: 0 auto 2em;
-    padding: 2em 1em;
-    border-radius: .5em;
-    font-family: var(--font-mono);
-    line-height: 1.3em;
-    background-color: rgb(var(--darkgray));
-    color: rgb(var(--lightgray));
-    overflow: auto;
-
-    > pre {
-      max-width: 740px;
-      margin: 0 auto;
-      font-size: 14px;
-      background-color: inherit;
+    &:first-child {
+      margin-top: 8rem;
     }
   }
 
-  blockquote {
+  > ul, > ol {
     max-width: 740px;
+    padding: 0 var(--gutter-x);
     margin: 0 auto 2em;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-style: italic;
-    overflow: auto;
 
-    p {
-      margin: 0;
-      padding: 0 calc(1em + 5vw);
+    li {
+      margin: .5em 0;
     }
-  }
-
-  blockquote::before {
-    content: open-quote;
-    top: 0;
-    left: 0;
-    margin-top: 1em;
-  }
-
-  blockquote::after {
-    content: close-quote;
-    bottom: 0;
-    right: 0;
-    margin: 0 0 1em auto;
-  }
-
-  blockquote::before,
-  blockquote::after {
-    color: #999;
-    background-color: #eee;
-    display: block;
-    width: 1em;
-    height: 1em;
-    line-height: 1.618;
-    font-family: sans-serif;
-    font-size: 2em;
-    border-radius: 100%;
-    text-align: center;
-    position: relative;
   }
 
   a {
@@ -188,38 +85,110 @@ article {
       color: rgb(var(--black));
     }
   }
+}
 
-  p img {
-    width: 900px;
-    max-width: 100vw;
-    margin-left: -100px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    height: auto;
+p img {
+  width: 900px;
+  max-width: 100vw;
+  margin-left: -100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: auto;
+}
+
+p img.small-image {
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  max-width: 740px;
+  margin: 0 auto 2em;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-style: italic;
+  overflow: auto;
+
+  p {
+    margin-top: 0;
+    padding: 0 calc(1em + 5vw);
+
+    &:first-child {
+      margin-top: 1em;
+    }
+  }
+}
+
+blockquote::before {
+  content: open-quote;
+  top: 0;
+  left: 0;
+  margin-top: 1em;
+}
+
+blockquote::after {
+  content: close-quote;
+  bottom: 0;
+  right: 0;
+  margin: 0 0 1em auto;
+}
+
+blockquote::before,
+blockquote::after {
+  color: #999;
+  background-color: #eee;
+  display: block;
+  width: 1em;
+  height: 1em;
+  line-height: 1.618;
+  font-family: sans-serif;
+  font-size: 2em;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.codepen, .cp_embed_wrapper {
+  max-width: 820px;
+  height: 400px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  margin: 0 auto 2em;
+  padding: 1em 0;
+}
+
+div.highlight {
+  max-width: 800px;
+  margin: 0 auto 2em;
+  padding: 2em 0;
+  border-radius: .5em;
+  line-height: 1.3em;
+  background-color: #f4f4f6;
+  color: rgb(var(--darkgray));
+  overflow: auto;
+
+  > pre {
+    max-width: 740px;
+    padding: 0 var(--gutter-x);
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: inherit;
   }
 
-  p img.small-image {
-    width: auto;
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .c,
+  .c1 {
+    color: gray;
   }
 }
 
 code {
   font-family: var(--font-mono);
-}
-
-div.language-shell .nv {
-  // color: gray;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-div.highlight .c,
-div.highlight .c1 {
-  color: gray;
 }
 
 code.highlighter-rouge {
@@ -229,20 +198,18 @@ code.highlighter-rouge {
   background-color: #eee;
 }
 
-@media (max-width: 1200px) {
-  .post-head h1 {
-    font-size: 2.5em;
-  }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 940px) {
   article {
-    p img {
+    > p img {
       margin-left: -20px;
       max-width: calc(100% + 40px);
     }
+  }
+}
 
-    ol, ul {
+@media (max-width: 840px) {
+  article {
+    > ol, > ul {
       list-style-position: inside;
     }
 
@@ -260,11 +227,9 @@ code.highlighter-rouge {
 }
 
 @media (max-width: 768px) {
-  article {
-    .banner {
-      img {
-        border-radius: 0;
-      }
+  article > .banner {
+    img {
+      border-radius: 0;
     }
   }
 }

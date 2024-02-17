@@ -7,7 +7,7 @@ bgcolor: "#f0efe7"
 color: "#000"
 ---
 
-Git 常用操作手册。
+包括设置密钥，协同开发和常用指令。
 
 ## 设置密钥
 
@@ -21,6 +21,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your.name@gmail.com"
 
 ```shell
 $ clip < ~/.ssh/id_rsa.pub          # 在 Windows 上复制到剪切板
+$ clipcopy ~/.ssh/id_rsa.pub        # zsh
 ```
 
 如果已经有私钥了，可以[从私钥创建公钥](https://askubuntu.com/a/53555)

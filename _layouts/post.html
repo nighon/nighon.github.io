@@ -10,11 +10,11 @@ layout: default
     <p>{{ page.date | date: "%B %d, %Y" }}</p>
   </div>
   <article>
-    {% if page.image %}
     <div class="banner">
+    {% if page.image %}
       <img src="{{ page.image }}" />
-    </div>
     {% endif %}
+    </div>
 
     {{ content }}
   </article>
