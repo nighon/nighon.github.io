@@ -14,7 +14,7 @@ layout: home
       </a>
 
       {% if post.date %}
-        <div class="published-at">{{ post.date | date: "%B %d, %Y" }}</div>
+        <p class="published-at">{{ post.date | date: "%B %d, %Y" }}</p>
       {% endif %}
 
       {% if post.excerpt %}

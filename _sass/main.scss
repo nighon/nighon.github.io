@@ -131,7 +131,7 @@ a.animate {
   flex: 1;
   max-width: 740px;
   padding: 0 var(--gutter-x);
-  margin: 200px auto 0;
+  margin: calc(14vh + 20px) auto 0;
 
   a.title {
     margin: .5em 0;
@@ -147,13 +147,18 @@ a.animate {
 
   .published-at {
     font-size: 14px;
-    font-style: italic;
-    line-height: 1.9em;
+    line-height: 1em;
     color: #999;
   }
 
   .summary {
+    margin-top: 1em;
     line-height: 1.8em;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
   }
 
   ul {
