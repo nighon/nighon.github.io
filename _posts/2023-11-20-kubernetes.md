@@ -87,3 +87,23 @@ $ kubectl describe pods
 ```shell
 $ kubectl delete deployments/kubernetes-bootcamp services/kubernetes-bootcamp
 ```
+
+## 获取配置上下文，切换环境
+
+```shell
+$ kubectl config --kubeconfig=$HOME/.kube/config get-contexts           # 列出上下文环境
+$ kubectl config --kubeconfig=$HOME/.kube/config use-context minikube   # 使用上下文环境
+```
+
+比如，要切换到腾讯云 TKE
+
+```shell
+$ export KUBECONFIG=$KUBECONFIG:$HOME/cls-7ta42ut4-config   # 先添加新的上下文环境
+
+$ kubectl config --kubeconfig=$HOME/cls-7ta42ut4-config get-contexts
+CURRENT   NAME                                        CLUSTER        AUTHINFO       NAMESPACE
+*         cls-7ta42ut4-100000777545-context-default   cls-7ta42ut4   100000777545
+
+$ kubectl config --kubeconfig=$HOME/cls-7ta42ut4-config use-context cls-7ta42ut4-100000777545-context-default
+Switched to context "cls-7ta42ut4-100000777545-context-default".
+```
