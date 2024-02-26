@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "腾讯云 TKE"
+title: "部署到腾讯云 TKE"
 ---
 
 部署项目到腾讯云集成的 Kubernetes 集群（TKE）。

@@ -83,7 +83,7 @@ $ git checkout -b my-awesome-feature master
 $ git checkout -b fix-something-wrong master
 ```
 
-## 常用指令
+## 常用指令 (Cheat Sheet)
 
 以 HEAD~ 为示范 commit id
 以 README.md 为示范文件名
