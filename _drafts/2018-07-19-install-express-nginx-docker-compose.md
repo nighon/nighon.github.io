@@ -102,3 +102,18 @@ $ docker-compose exec fpm php artisan cache:clear
 $ docker-compose exec fpm php artisan view:clear
 $ docker-compose exec fpm php artisan route:cache
 ```
+
+## 推送到镜像仓库
+
+您需要使用注册表名称和要将其推送到的存储库来标记您的映像。 例如，要将名为 my-image 的映像推送到 Docker Hub 注册表，您可以使用以下命令：
+
+```shell
+$ docker tag my-image:latest docker.io/my-username/my-image:latest
+$ docker push docker.io/my-username/my-image:latest
+```
+
+如果您要将映像推送到私有注册表，则需要先通过注册表进行身份验证，然后才能推送映像。 您可以使用 `docker login` 命令来执行此操作。
+
+您可以使用 -a 或 --all-tags 标志将图像的所有标签推送到注册表。
+
+您可以使用 -f 或 --force 标志将映像推送到注册表，即使该映像已经存在。

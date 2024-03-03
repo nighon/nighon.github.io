@@ -27,7 +27,7 @@ $ echo "NODE_PORT=$NODE_PORT"
 $ curl http://"$(minikube ip):$NODE_PORT"
 ```
 
-每次运行curl命令时，您都会命中不同的Pod。 请注意，所有 Pod 现在都运行最新版本 (v2)。
+每次运行 curl 命令时，您都会命中不同的 Pod。 请注意，所有 Pod 现在都运行最新版本 (v2)。
 
 ## Rolling Update（滚动更新）
 
