@@ -6,14 +6,18 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title}}</title>
     <link rel="stylesheet" href="{{ '/assets/css/site.css' }}">
     <link rel="stylesheet" href="{{ '/assets/css/highlight-github.css' }}">
+    <script type="text/javascript" src="{{ '/assets/js/app.js' }}"></script>
+    {%- if page.layout == 'post' %}
+    <script defer type="text/javascript" src="{{ '/assets/js/post.js' }}"></script>
+    {%- endif %}
   </head>
   <body>
 
     {{ content }}
 
-    {% if jekyll.environment != "development" %}
+    {%- if jekyll.environment != "development" %}
       {% include google-analytics.html %}
-    {% endif %}
+    {%- endif %}
 
   </body>
 </html>
