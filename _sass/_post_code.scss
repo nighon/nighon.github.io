@@ -26,6 +26,11 @@ code {
   font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;;
 }
 
+div.language-shell .nv {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 code.highlighter-rouge {
   font-size: 16px;
   padding: .3em .5em;
