@@ -61,11 +61,17 @@ body {
 
 a {
   color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .3em;
 
   &
   :active,
   :visited {
     color: inherit;
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 1);
   }
 }
 
