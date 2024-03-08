@@ -4,7 +4,7 @@ header {
   left: 0;
   right: 0;
   text-align: center;
-  padding: 20px var(--gutter-x);
+  padding: calc(2px + 2vh) var(--gutter-x);
 
   h5 {
     font-size: 11px;

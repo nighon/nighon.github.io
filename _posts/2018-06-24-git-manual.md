@@ -2,8 +2,7 @@
 layout: post
 title: "Git 常用操作"
 categories: git
-image: "/assets/img/pexels-photo-7897470.webp"
-bgcolor: "#f0efe7"
+bgcolor: "#f8f8f0"
 color: "#000"
 ---
 

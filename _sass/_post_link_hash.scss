@@ -1,0 +1,87 @@
+article .post-header-link {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  padding-right: 20px;
+  margin-right: -28px;
+  color: #999;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: 400
+}
+
+article .post-header-link:hover {
+  color: #666;
+}
+
+.post-header-link-label {
+  position: absolute;
+  visibility: hidden;
+  transform-origin: 100% 50%;
+  right: calc(100% + 10px);
+  font-size: 14px;
+  top: 0;
+  margin: auto;
+  font-weight: 400;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 8px;
+  line-height: 1em;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  will-change: transform;
+}
+
+.post-header-link-hash {
+  font-size: 0;
+  opacity: 0;
+}
+
+.post-content-wrapper {
+  padding: 20px;
+  margin-bottom: 2em;
+  position: relative;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f4f6;
+  border-radius: var(--rounded);
+  box-sizing: border-box
+}
+
+.post-header-link-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  margin: auto;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-left: 5px solid #000;
+}
+
+h2:hover .post-header-link,
+h3:hover .post-header-link,
+h4:hover .post-header-link {
+  opacity: 1;
+}
+
+.post-header-link:hover {
+  opacity: 1;
+  color: #888;
+}
+
+.post-header-link:hover .post-header-link-label {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}

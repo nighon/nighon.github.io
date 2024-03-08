@@ -2,8 +2,9 @@
   --black: 0,0,0;
   --darkgray: 51,51,51;
   --lightgray: 200,200,200;
-  --font-mono: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
-  --gutter-x: 16px;
+  --gutter-x: 20px;
+  --post-max-width: 740px;
+  --post-font-size: 20px;
 }
 
 *,
@@ -44,16 +45,28 @@ table {
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.9em;
+  background-color: #fff;
+  color: #000;
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: inherit;
+
+  &
+  :active,
+  :visited {
+    color: inherit;
+  }
 }
 
 main {
@@ -67,15 +80,26 @@ footer {
   color: #999;
   width: 100%;
   max-width: 940px;
-
   margin-top: 8em;
-  margin-bottom: 4em;
+  margin-bottom: 8em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 var(--gutter-x);
+  font-size: 16px;
 
   p {
     text-align: center;
+  }
+}
+
+header a {
+  &:active,
+  :visited {
+    opacity: .75;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -135,7 +159,7 @@ a.animate {
 
   a.title {
     margin: .5em 0;
-    color: forestgreen;
+    color: teal;
 
     h2 {
       font-size: 24px;
