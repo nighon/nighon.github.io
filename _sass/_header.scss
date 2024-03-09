@@ -4,7 +4,11 @@ header {
   left: 0;
   right: 0;
   text-align: center;
-  padding: calc(2px + 2vh) var(--gutter-x);
+  padding: 0 var(--gutter-x);
+
+  nav {
+    margin: calc(2px + 2vh) auto .5em;
+  }
 
   h5 {
     font-size: 11px;
