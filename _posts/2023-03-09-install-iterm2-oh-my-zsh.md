@@ -16,7 +16,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 ## 安装 iTerm2
 
 ```shell
-$ brew cask install iterm2
+$ brew install --cask iterm2
 ```
 
 ## 安装 zsh 和 Oh My Zsh
