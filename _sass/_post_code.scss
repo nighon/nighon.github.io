@@ -51,43 +51,43 @@ code.highlighter-rouge {
   }
 }
 
-.language-shell div.highlight::before {
-  content: "Shell"
-}
+// .language-shell div.highlight::before {
+//   content: "Shell"
+// }
 
-.language-css div.highlight::before {
-  content: "CSS"
-}
+// .language-css div.highlight::before {
+//   content: "CSS"
+// }
 
-.language-html div.highlight::before {
-  content: "HTML"
-}
+// .language-html div.highlight::before {
+//   content: "HTML"
+// }
 
-.language-javascript div.highlight::before {
-  content: "JavaScript"
-}
+// .language-javascript div.highlight::before {
+//   content: "JavaScript"
+// }
 
-div.highlight {
-  position: relative;
-}
+// div.highlight {
+//   position: relative;
+// }
 
-div.highlight::before {
-  z-index: 100;
-  position: absolute;
-  content: "";
-  top: 10px;
-  right: 10px;
-  font-size: 13px;
-  font-weight: 400;
-  background-color: #ccc;
-  padding: 4px 10px;
-  border-radius: 9px;
-  letter-spacing: 0.04em;
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.2s ease-out;
-}
+// div.highlight::before {
+//   z-index: 100;
+//   position: absolute;
+//   content: "";
+//   top: 10px;
+//   right: 10px;
+//   font-size: 13px;
+//   font-weight: 400;
+//   background-color: #ccc;
+//   padding: 4px 10px;
+//   border-radius: 9px;
+//   letter-spacing: 0.04em;
+//   color: #fff;
+//   opacity: 0;
+//   transition: opacity 0.2s ease-out;
+// }
 
-div.highlight:hover::before {
-  opacity: 1;
-}
+// div.highlight:hover::before {
+//   opacity: 1;
+// }
