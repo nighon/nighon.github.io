@@ -4,7 +4,7 @@
   --lightgray: 200,200,200;
   --gutter-x: 20px;
   --post-max-width: 740px;
-  --post-font-size: 20px;
+  --post-font-size: 18px;
 }
 
 *,
@@ -72,8 +72,8 @@ footer {
   div {
     margin: 8em auto;
     max-width: 740px;
-    color: rgba(var(--black), .5);
-    font-size: 16px;
+    color: rgba(var(--black), 0.5);
+    font-size: 14px;
     text-align: center;
   }
 }
@@ -81,7 +81,7 @@ footer {
 a {
   color: inherit;
   text-decoration: underline;
-  text-underline-offset: .3em;
+  text-underline-offset: 0.3em;
 
   &
   :active,
@@ -95,17 +95,17 @@ a {
 }
 
 a.underline {
-  padding-bottom: .3em;
+  padding-bottom: 0.3em;
   color: teal;
   text-decoration: none;
   background-image: linear-gradient(teal, teal);
   background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: 0 .15em;
+  background-size: 0 0.15em;
   transition: background-size 0.5s ease;
 
   &:hover {
-    background-size: 100% .15em;
+    background-size: 100% 0.15em;
   }
 
   h1,
@@ -150,7 +150,7 @@ a.underline {
 //     background-color: currentColor;
 //     transform: scaleX(0);
 //     transform-origin: top left;
-//     transition: transform .3s ease;
+//     transition: transform 0.3s ease;
 //   }
 
 //   &:hover {

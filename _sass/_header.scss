@@ -7,7 +7,7 @@ header {
   padding: 0 var(--gutter-x);
 
   nav {
-    margin: calc(2px + 2vh) auto .5em;
+    margin: calc(2px + 2vh) auto 0.5em;
   }
 
   h5 {
@@ -23,7 +23,7 @@ header {
   a {
     display: inline-block;
     text-decoration: none;
-    opacity: .75;
+    opacity: 0.75;
 
     &:active {
       color: inherit;

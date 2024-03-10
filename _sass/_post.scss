@@ -1,5 +1,5 @@
 .post {
-  color: rgba(0, 0, 0, .75)
+  color: rgba(0, 0, 0, 0.75)
 }
 
 .post-head {
@@ -19,9 +19,9 @@
 
   p {
     max-width: 980px;
-    margin: .5em auto;
+    margin: 0.5em auto;
     color: currentColor;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -43,7 +43,7 @@ article {
     max-width: var(--post-max-width);
     padding: 0 var(--gutter-x);
     margin: 2em auto 1em;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 400;
     line-height: 1.3em;
     scroll-margin-top: 1em;
@@ -70,7 +70,7 @@ article {
     margin: 0 auto 2em;
 
     li {
-      margin: .5em 0;
+      margin: 0.5em 0;
     }
   }
 }
