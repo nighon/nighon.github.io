@@ -4,33 +4,27 @@ header {
   left: 0;
   right: 0;
   text-align: center;
-  padding: 0 var(--gutter-x);
-
-  nav {
-    margin: calc(2px + 2vh) auto 0.5em;
-  }
 
   h5 {
+    padding-top: 2vmin;
     font-size: 11px;
     font-weight: 800;
     // text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding: 0;
     margin: 0;
   }
 
   a {
-    display: inline-block;
     text-decoration: none;
-    opacity: 0.75;
+    color: rgba(var(--black), 0.5);
 
     &:active {
       color: inherit;
     }
 
     &:hover {
-      opacity: 1;
+      color: rgba(var(--black), 1)
     }
   }
 }
