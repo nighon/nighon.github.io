@@ -95,6 +95,7 @@ $ git log -p -- README.md                             # 列出单个文件历史
 $ git diff HEAD~                                      # 列出改动
 $ git diff-tree --no-commit-id --name-only -r HEAD~   # 列出改动的文件
 $ git branch -d my-awesome-feature                    # 删除本地分支
+$ git -C ../nighon.github.io status                   # 切换目录，再进行操作
 ```
 
 branch，tag 操作
