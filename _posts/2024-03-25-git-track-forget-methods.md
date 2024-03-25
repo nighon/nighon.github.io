@@ -7,7 +7,9 @@ title: 'Git track forget methods'
 
 以下是每种方法的细分：
 
-## 方法一 `git rm --cached <file>`
+## git rm --cached
+
+**警告：虽然这不会从本地计算机中删除物理文件，但会在其他开发人员的下一次 `git pull` 时从他的计算机中删除文件。**
 
 此命令从索引（暂存区域）中删除指定的文件，同时将其保留在工作目录中。它有效地停止跟踪文件，而不将其从文件系统中删除。
 该文件将不再包含在以后的提交中，Git 将不再跟踪对其所做的更改。如果您想从存储库（包括历史记录）中完全删除该文件，您需要跟进提交并推送以使更改永久化。
@@ -16,9 +18,7 @@ title: 'Git track forget methods'
 
 `grep -v '^#' .gitignore | grep -v '^$' | xargs -I {} git rm --cached {}`
 
-WARNING: While this will not remove the physical file from your local machine, it will remove the files from other developers' machines on their next git pull.
-
-## 方法二 `git update-index --skip-worktree <file_name>`
+## git update-index --skip-worktree
 
 此命令告诉 Git 忽略对工作目录中指定文件的更改。它不会从索引或跟踪中删除文件； 相反，它将文件标记为“skip-worktree”，这意味着 Git 不会在本地更新它。如果您希望将文件保留在存储库中并在存储库的其他克隆上更新它，但您希望对其进行本地更改而不影响存储库的版本，那么这非常有用。与 git rm --cached 不同，此命令不会影响提交到存储库的内容。如果文件被修改并暂存，这些更改仍将包含在提交中，除非您显式重置跳过工作树位。
 
