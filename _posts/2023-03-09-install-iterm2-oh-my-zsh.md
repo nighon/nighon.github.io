@@ -9,7 +9,7 @@ bgcolor: "#cfc"
 
 ## 安装 Homebrew
 
-Homebrew 是一个免费的开源软件包管理系统，可简化 Apple 操作系统、macOS 以及 Linux 上的软件安装。
+Homebrew 是一个免费的开源软件包管理系统，可简化 macOS 上的软件安装。
 
 ```shell
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -17,7 +17,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 
 ## 安装 iTerm2
 
-iTerm2 是一款适用于 macOS 的免费开源终端模拟器。用来替代系统默认的 Terminal。
+iTerm2 是一款适用于 macOS 的免费开源终端模拟器，用来替代系统默认的 Terminal。
 
 ```shell
 $ brew install --cask iterm2
