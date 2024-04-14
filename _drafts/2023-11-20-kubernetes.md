@@ -107,3 +107,8 @@ CURRENT   NAME                                        CLUSTER        AUTHINFO   
 $ kubectl config --kubeconfig=$HOME/cls-7ta42ut4-config use-context cls-7ta42ut4-100000777545-context-default
 Switched to context "cls-7ta42ut4-100000777545-context-default".
 ```
+
+```shell
+$ kubectl get pods --field-selector=status.phase=Failed
+$ kubectl delete pods --field-selector=status.phase=Failed  # 批量删除
+```
