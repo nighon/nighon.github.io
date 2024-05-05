@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "用 Homebrew 安装 iTerm2, Zsh 和 Oh My Zsh"
+title: "在 macOS 上使用 iTerm2, Zsh 和 Oh My Zsh"
 image: "/assets/img/screen-mock-1.jpg"
 bgcolor: "#cfc"
 ---
 
-用 Homebrew 安装 macOS 上的命令行的开发环境组合：iTerm2, Zsh 和 Oh My Zsh。
+用 Homebrew 安装 macOS 上命令行的开发环境组合：iTerm2, Zsh 和 Oh My Zsh。
 
 ## 安装 Homebrew
 
