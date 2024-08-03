@@ -1,0 +1,16 @@
+blockquote {
+  max-width: var(--post-max-width);
+  margin: 0 auto 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+  border-left: 8px solid #eee;
+  background-color: #f8f8f8;
+
+  p {
+    color: rgba(var(--black), 1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 20px;
+  }
+}

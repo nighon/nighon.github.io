@@ -1,0 +1,30 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  h5 {
+    padding-top: 2vmin;
+    font-size: 12px;
+    font-weight: 800;
+    // text-align: center;
+    // text-transform: uppercase;
+    // letter-spacing: 0.1em;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(var(--black), 0.5);
+
+    &:active {
+      color: inherit;
+    }
+
+    &:hover {
+      color: rgba(var(--black), 0.75)
+    }
+  }
+}

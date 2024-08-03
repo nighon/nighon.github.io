@@ -1,0 +1,35 @@
+.posts-list {
+  flex: 1;
+  max-width: 740px;
+  padding: 0 var(--gutter-x);
+  margin: calc(14vh + 20px) auto 0;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3em;
+  }
+
+  .published-at {
+    font-size: 14px;
+    color: rgba(var(--black), 0.5);
+  }
+
+  .summary {
+    p {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    > li {
+      margin-bottom: 3.5em;
+
+      a {
+        color: rgb(var(--teal-color));
+      }
+    }
+  }
+}

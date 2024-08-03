@@ -1,0 +1,13 @@
+<script src="/assets/js/anime.min.js"></script>
+<script src="/assets/js/app.js"></script>
+
+<script>
+	// Clear localStorage if number of posts have changed
+	app.search.postCountKey = "postCount";
+	var postCountCached = parseInt(localStorage.getItem(app.search.postCountKey));
+	var postCount = {{ site.posts.size }};
+
+	// If number of posts have changed, clear cache
+	if (postCount != postCountCached) { localStorage.clear(); }
+	localStorage.setItem(app.search.postCountKey, postCount);
+</script>
