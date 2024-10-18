@@ -11,7 +11,7 @@ bgcolor: "#cfc"
 
 Homebrew 是一个免费的开源软件包管理系统，可简化 macOS 上的软件安装。
 
-```shell
+```console
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
@@ -19,7 +19,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 
 iTerm2 是一款适用于 macOS 的免费开源终端模拟器，用来替代系统默认的 Terminal。
 
-```shell
+```console
 $ brew install --cask iterm2
 ```
 
@@ -28,7 +28,7 @@ $ brew install --cask iterm2
 Zsh 是一种专为交互式使用而设计的 shell，同时它也是一种功能强大的脚本语言。<br>
 Oh My Zsh 是一个用于管理 Zsh 配置的开源框架。
 
-```shell
+```console
 $ brew install zsh && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -36,7 +36,7 @@ $ brew install zsh && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmy
 
 ## 设置色彩和样式
 
-```shell
+```console
 $ cd Downloads && curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors
 ```
 

@@ -2,7 +2,7 @@
 
 ## 安装 Ruby
 
-```shell
+```console
 $ rbenv install 3.3.3
 $ rbenv global 3.3.3
 $ rbenv versions
@@ -10,7 +10,7 @@ $ rbenv versions
 
 ## 安装第三方库
 
-```shell
+```console
 $ gem update --system
 $ gem install bundler
 $ bundle update
@@ -18,14 +18,14 @@ $ bundle update
 
 ## 启动
 
-```shell
+```console
 $ jekyll serve
 # $ bundle exec jekyll serve
 ```
 
 ## 生成语法高亮样式
 
-```shell
+```console
 $ rougify help style
 $ rougify style github > assets/css/highlight-github.css
 ```

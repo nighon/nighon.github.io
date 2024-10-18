@@ -12,13 +12,13 @@ Compose is a tool for defining and running multi-container Docker applications.
 
 Run this command to download the latest version of Docker Compose:
 
-```shell
+```console
 $ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 ```
 
 Apply executable permissions to the binary:
 
-```shell
+```console
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
@@ -55,7 +55,7 @@ mongodb:
 
 创建 VOLUMES 目录
 
-```shell
+```console
 $ mkdir -p /home/vagrant/nginx/conf.d
 $ mkdir -p /home/vagrant/mongodb
 ```
@@ -79,7 +79,7 @@ server {
 
 运行 docker-compose
 
-```shell
+```console
 $ docker-compose -f compose-nginx-nodejs-mongodb.yml up
 ```
 
@@ -87,7 +87,7 @@ $ docker-compose -f compose-nginx-nodejs-mongodb.yml up
 
 ## 常用命令
 
-```shell
+```console
 $ docker volume ls
 $ docker volume prune
 $ docker volume inspect delivery_storage
@@ -107,7 +107,7 @@ $ docker-compose exec fpm php artisan route:cache
 
 您需要使用注册表名称和要将其推送到的存储库来标记您的映像。 例如，要将名为 my-image 的映像推送到 Docker Hub 注册表，您可以使用以下命令：
 
-```shell
+```console
 $ docker tag my-image:latest docker.io/my-username/my-image:latest
 $ docker push docker.io/my-username/my-image:latest
 ```
