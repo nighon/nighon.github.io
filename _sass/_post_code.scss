@@ -1,93 +1,38 @@
 div.highlight {
-  max-width: calc(var(--post-max-width) + 80px);
-  margin: 0 auto 2em;
-  padding: 2em 0;
-  border-radius: 1em;
-  line-height: 1.3em;
   background-color: #f4f4f6;
-  color: rgb(var(--darkgray));
-  overflow: auto;
+  border-radius: var(--rounded);
+  padding: 2.4em 1em 2.6em;
+  width: 100%;
+  max-width: 820px;
+  overflow-x: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-left: auto;
+  line-height: 1.3em;
+  box-sizing: border-box;
+  position: relative;
+  font-family: var(--mono-font);
 
-  > pre {
-    max-width: var(--post-max-width);
-    padding: 0 var(--gutter-x);
-    margin: 0 auto;
+  > pre.highlight {
+    max-width: 700px;
     font-size: 14px;
+    margin: 0 auto;
     background-color: inherit;
-  }
-
-  .c,
-  .c1 {
-    color: gray;
   }
 }
 
 code {
-  font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;;
+  font-family: var(--mono-font);
 }
 
-div.language-shell .nv {
+div.language-console .gp {
   -webkit-user-select: none;
   user-select: none;
 }
 
-code.highlighter-rouge {
-  font-size: 14px;
-  padding: 0.3em 0.5em;
-  border-radius: 7px;
-  background-color: #eee;
-}
-
-@media (max-width: 1000px) {
-  div.highlight {
-    max-width: var(--post-max-width);;
-  }
-}
-
 @media (max-width: 780px) {
   div.highlight {
-    max-width: 100%;
+    position: unset;
     border-radius: 0;
   }
 }
-
-// .language-shell div.highlight::before {
-//   content: "Shell"
-// }
-
-// .language-css div.highlight::before {
-//   content: "CSS"
-// }
-
-// .language-html div.highlight::before {
-//   content: "HTML"
-// }
-
-// .language-javascript div.highlight::before {
-//   content: "JavaScript"
-// }
-
-// div.highlight {
-//   position: relative;
-// }
-
-// div.highlight::before {
-//   z-index: 100;
-//   position: absolute;
-//   content: "";
-//   top: 10px;
-//   right: 10px;
-//   font-size: 13px;
-//   font-weight: 400;
-//   background-color: #ccc;
-//   padding: 4px 10px;
-//   border-radius: 9px;
-//   letter-spacing: 0.04em;
-//   color: #fff;
-//   opacity: 0;
-//   transition: opacity 0.2s ease-out;
-// }
-
-// div.highlight:hover::before {
-//   opacity: 1;
-// }

@@ -1,18 +1,19 @@
 :root {
   --black: 0, 0, 0;
-  --darkgray: 50, 50, 50;
-  --lightgray: 200, 200, 200;
   --teal-color: 0, 128, 128;
   --gutter-x: 20px;
   --post-max-width: 740px;
   --post-font-size: 18px;
+  --rounded: 18px;
+  --mono-font: "SF Mono", SFMono-Regular, ui-monospace, "DejaVu Sans Mono",
+    Menlo, Consolas, monospace;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
 
 html,
 div,
@@ -51,7 +52,9 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 18px;
   line-height: 1.9em;
   background-color: #fff;
@@ -72,10 +75,6 @@ footer {
 
   a {
     text-decoration: none;
-
-    // &:hover {
-    //   color: #eb6534;
-    // }
   }
 
   div {
@@ -90,11 +89,8 @@ footer {
 
 a {
   color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 0.3em;
 
-  &
-  :active,
+  & :active,
   :visited {
     color: inherit;
   }
@@ -122,6 +118,15 @@ a.underline {
   h3 {
     display: inline;
   }
+}
+
+h1 {
+  font-style: normal;
+  font-size: 45px;
+  font-weight: normal;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
 }
 
 .not-found {
