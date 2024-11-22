@@ -23,13 +23,13 @@ HashiCorp 维护着广泛的官方提供商列表，并且还可以与社区开�
 
 首先，安装 HashiCorp Tap，它是我们所有 Homebrew 软件包的存储库。
 
-```shell
+```console
 $ brew tap hashicorp/tap
 ```
 
 现在，使用 hashcorp/tap/terraform 安装 Terraform。
 
-```shell
+```console
 $ brew install hashicorp/tap/terraform
 ```
 
@@ -52,7 +52,7 @@ availability_region = "ap-singapore"
 availability_zone = "ap-singapore-4"
 ```
 
-```shell
+```console
 $ echo 'terraform.tfvars' >> .gitignore # 在版本库中忽略该文件
 ```
 
@@ -204,7 +204,7 @@ resource "tencentcloud_cos_bucket_object" "example" {
 
 创建 404.html 文件，提供更友好的 404 页面：
 
-```shell
+```console
 $ echo '<html><head><title>404</title></head><body>Page not found.</body></html>' > 404.html
 ```
 
@@ -274,7 +274,7 @@ resource "tencentcloud_dnspod_record" "example" {
 
 ## 运行 Terraform
 
-```shell
+```console
 $ terraform init
 $ terraform plan
 $ terraform apply --auto-approve

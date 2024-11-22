@@ -16,13 +16,13 @@ HashiCorp 维护着广泛的官方提供商列表，并且还可以与社区开�
 
 首先，安装 HashiCorp Tap，它是我们所有 Homebrew 软件包的存储库。
 
-```shell
+```console
 $ brew tap hashicorp/tap
 ```
 
 现在，使用 hashcorp/tap/terraform 安装 Terraform。
 
-```shell
+```console
 $ brew install hashicorp/tap/terraform
 ```
 
