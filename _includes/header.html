@@ -1,4 +1,4 @@
-<header class="site-header-post">
+<header class="site-header{% if page.is_post %} site-header-post{% endif %}">
   {% if page.url != "/" %}
     <button aria-checked="false" data-testid="add-button" class="menu button-clear" aria-label="收藏至音乐库" data-encore-id="buttonTertiary">
       <a href="/">
@@ -10,4 +10,5 @@
       </a>
     </button>
   {% endif %}
+  <div>&nbsp;</div>
 </header>

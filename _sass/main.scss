@@ -47,8 +47,8 @@ table {
 }
 
 html {
-  font-size: 18px;
   scroll-behavior: smooth;
+  // height: 100%;
 }
 
 body {
@@ -57,17 +57,9 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 18px;
   line-height: 1.9em;
-  background-color: #fff;
-  color: #000;
   margin: 0;
   padding: 0;
-}
-
-main {
-  clear: both;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  // height: 100%;
 }
 
 footer {
@@ -90,8 +82,7 @@ footer {
 a {
   color: inherit;
 
-  & :active,
-  :visited {
+  &:active, :visited {
     color: inherit;
   }
 
@@ -129,17 +120,24 @@ h1 {
   padding: 0;
 }
 
-.not-found {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+p {
+  margin-bottom: 2em;
+}
 
-  h1 {
-    font-size: calc(24px + 8vmin);
-  }
+.page-not-found {
+  max-width: 600px;
+  text-align: center;
+  margin: 90px auto;
+}
+
+.page-not-found-header {
+  font-weight: 300;
+  line-height: 1.7em;
+}
+
+.page-not-found-subheader {
+  font-weight: 300;
+  margin-bottom: 45px;
 }
 
 @import "header";
