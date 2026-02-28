@@ -25,7 +25,8 @@ code {
   font-family: var(--mono-font);
 }
 
-div.language-console .gp {
+div.language-console .gp,
+div.language-zsh .nv {
   -webkit-user-select: none;
   user-select: none;
 }
