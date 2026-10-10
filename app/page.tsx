@@ -10,7 +10,7 @@ export default function BlogIndex() {
 
       <ul className="space-y-8">
         {posts.map((post) => (
-          <li key={post.slug} className="border-b border-gray-100 pb-8 last:border-none">
+          <li key={post.slug} className="border-b border-gray-100 pb-8 first:pt-8 last:border-none">
             <Link
               href={`/${post.slug}`}
               className="text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
